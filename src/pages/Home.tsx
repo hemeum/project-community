@@ -1,11 +1,11 @@
 import React from 'react';
 
-import LogoLayout from '../layouts/home/LogoLayout';
+import BoxLayout from '../layouts/home/BoxLayout';
 
 export default function Home() {
 	return (
 		<>
-			<LogoLayout />
+			<BoxLayout />
 		</>
 	);
 }
