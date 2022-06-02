@@ -4,7 +4,7 @@ import Logo from './../../components/home/Logo';
 
 export default function LogoLayout() {
 	return (
-		<div>
+		<div className="flex justify-center">
 			<Logo />
 		</div>
 	);
