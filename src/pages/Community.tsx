@@ -1,5 +1,11 @@
 import React from 'react';
 
+import CHLayout from '../layouts/community/CHLayout';
+
 export default function Community() {
-	return <>커뮤니티 페이지</>;
+	return (
+		<>
+			<CHLayout />
+		</>
+	);
 }
