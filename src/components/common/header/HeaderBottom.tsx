@@ -15,7 +15,9 @@ export default function HeaderBottom({ menusArr }: HeaderBottomProps) {
 		return (
 			<li
 				className={`text-gray-500 cursor-pointer ${
-					isMenu === menu.name ? 'text-black' : undefined
+					isMenu === menu.name
+						? 'text-black pb-6 border-b-8 border-black border-solid'
+						: undefined
 				}`}
 				key={menu.id}
 				onClick={handleIsMenu}
