@@ -1,11 +1,11 @@
 import React from 'react';
 
-import CHLayout from '../layouts/community/CHLayout';
+import CommunityLayout from '../layouts/community/CommunityLayout';
 
 export default function Community() {
 	return (
 		<>
-			<CHLayout />
+			<CommunityLayout />
 		</>
 	);
 }

@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export interface HeaderBottomProps {
+import { CHProps } from '../../community/CommunityHeader';
+
+export interface HeaderBottomProps extends CHProps {
 	menusArr: { id: number; name: string }[];
 }
 
-export default function HeaderBottom({ menusArr }: HeaderBottomProps) {
-	const [isMenu, setIsMenu] = useState('자유게시판');
-
+export default function HeaderBottom({
+	menusArr,
+	isMenu,
+	setIsMenu,
+}: HeaderBottomProps) {
 	const handleIsMenu = (e: any) => {
 		setIsMenu(e.target.textContent);
 	};
