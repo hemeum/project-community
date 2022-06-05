@@ -6,8 +6,8 @@ import { CMProps } from '../../components/community/CommunityMain';
 
 export default function CMLayout({ isMenu }: CMProps) {
 	return (
-		<>
+		<main>
 			<CommunityMain isMenu={isMenu}></CommunityMain>
-		</>
+		</main>
 	);
 }
