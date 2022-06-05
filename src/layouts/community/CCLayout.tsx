@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CommunityMain from '../../components/community/CommunityMain';
+import CommunityMain from '../../components/community/CommunityContents';
 
-import { CMProps } from '../../components/community/CommunityMain';
+import { CMProps } from '../../components/community/CommunityContents';
 
 export default function CMLayout({ isMenu }: CMProps) {
 	return (
