@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import CommunitySearch from './CommunitySearch';
 import CommunityList from './CommunityList';
 import CommunityNav from './CommunityNav';
 
@@ -173,9 +174,13 @@ export default function CommunityContents({ isMenu }: CMProps) {
 	}, [isMenu]);
 
 	return (
-		<section className="container mx-auto">
+		<>
+			<div className="flex justify-between my-8">
+				<h1 className="text-4xl">{isMenu}</h1>
+				<CommunitySearch></CommunitySearch>
+			</div>
 			<CommunityList isMenuList={isMenuList}></CommunityList>
 			<CommunityNav></CommunityNav>
-		</section>
+		</>
 	);
 }
