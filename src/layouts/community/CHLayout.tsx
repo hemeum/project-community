@@ -7,12 +7,12 @@ import CommunityHeader from '../../components/community/CommunityHeader';
 export default function CHLayout({ isMenu, setIsMenu }: CHProps) {
 	return (
 		<>
-			<div className="container mx-auto mt-12">
+			<header className="container mx-auto mt-12">
 				<CommunityHeader
 					isMenu={isMenu}
 					setIsMenu={setIsMenu}
 				></CommunityHeader>
-			</div>
+			</header>
 			<hr></hr>
 		</>
 	);
