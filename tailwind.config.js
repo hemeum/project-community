@@ -3,7 +3,10 @@ module.exports = {
   theme: {
     extend: {
       spacing:{
-        "24.1":"98px"
+        "24.1":"98px",
+        "lg":"1280px",
+        "md":"920px",
+        "sm":"380px"
       }
     },
   },
