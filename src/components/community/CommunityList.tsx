@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CLItem from './CLItem';
+
 interface CommunityListProps {
 	isMenuList: {
 		postId: number;
@@ -19,7 +21,7 @@ interface CommunityListProps {
 
 export default function CommunityList({ isMenuList }: CommunityListProps) {
 	const list = isMenuList.map((item) => {
-		return <li key={item.postId}>{item.title}</li>;
+		return <CLItem item={item}></CLItem>;
 	});
-	return <>{list}</>;
+	return <ul className="border-solid border-t border-gray-300">{list}</ul>;
 }
