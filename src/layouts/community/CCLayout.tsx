@@ -7,7 +7,7 @@ import { CMProps } from '../../components/community/CommunityContents';
 export default function CMLayout({ isMenu }: CMProps) {
 	return (
 		<main className="my-12">
-			<section className="container mx-auto">
+			<section className="w-lg mx-auto">
 				<CommunityContents isMenu={isMenu}></CommunityContents>
 			</section>
 		</main>
