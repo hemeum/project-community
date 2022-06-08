@@ -47,7 +47,7 @@ export default function CommunitySearch() {
 					<i className="fa-solid fa-angle-down"></i>
 				</div>
 				<ul
-					className={`w-32 px-2 py-3 border border-solid border-t-0 border-gray-300 ${
+					className={`w-32 px-2 py-3 border border-solid border-t-0 border-gray-300 bg-white ${
 						menuToggle ? 'opacity-1 visible' : 'opacity-0 invisible'
 					}`}
 				>
@@ -68,7 +68,7 @@ export default function CommunitySearch() {
 					<i className="fa-solid fa-angle-down ml-8"></i>
 				</div>
 				<ul
-					className={`w-24.1 h-28 absolute -left-px -bottom-28 px-2 py-3 border border-solid border-t-0  border-gray-300 ${
+					className={`w-24.1 h-28 absolute -left-px -bottom-28 px-2 py-3 border border-solid border-t-0  border-gray-300 bg-white ${
 						menuOptionToggle ? 'opacity-1 visible' : 'opacity-0 invisible'
 					}`}
 				>
