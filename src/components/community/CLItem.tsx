@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 interface CLitemProps {
 	item: {
 		postId: number;
@@ -25,18 +27,20 @@ export default function CLitem({ item }: CLitemProps) {
 			key={item.postId}
 			className="py-6 px-6 border-solid border-b border-gray-200 text-basic flex justify-between"
 		>
-			<p className="w-600">
-				{item.title}{' '}
-				{Number(item.commentCount) !== 0 ? (
-					<span>({item.commentCount})</span>
-				) : undefined}
-				{date.getDate() === uploadDate.getDate() ? (
-					<i className="fa-solid fa-n mx-2"></i>
-				) : undefined}
-				{item.uploadImg !== '' ? (
-					<i className="fa-solid fa-image"></i>
-				) : undefined}
-			</p>
+			<Link to="/">
+				<p className="w-600">
+					{item.title}{' '}
+					{Number(item.commentCount) !== 0 ? (
+						<span>({item.commentCount})</span>
+					) : undefined}
+					{date.getDate() === uploadDate.getDate() ? (
+						<i className="fa-solid fa-n mx-2"></i>
+					) : undefined}
+					{item.uploadImg !== '' ? (
+						<i className="fa-solid fa-image"></i>
+					) : undefined}
+				</p>
+			</Link>
 			<div>
 				<span>{item.writerNickName}</span>
 				<span>
