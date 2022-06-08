@@ -42,17 +42,19 @@ export default function CLitem({ item }: CLitemProps) {
 				</p>
 			</Link>
 			<div>
-				<span>{item.writerNickName}</span>
-				<span>
-					<i className="fa-solid fa-heart"></i>
+				<span className="mr-16 text-left inline-block w-28">
+					{item.writerNickName}
+				</span>
+				<span className="text-left inline-block w-16">
+					<i className="mr-2 fa-solid fa-heart"></i>
 					{item.heartCount}
 				</span>
-				<span>
-					<i className="fa-solid fa-clock"></i>
+				<span className="ml-4 mr-8">
+					<i className="mr-2 fa-solid fa-clock"></i>
 					{item.writtenAt}
 				</span>
-				<span>
-					<i className="fa-solid fa-eye"></i>
+				<span className="text-left inline-block w-16">
+					<i className="mr-2 fa-solid fa-eye"></i>
 					{item.viewCount}
 				</span>
 			</div>
