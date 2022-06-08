@@ -18,14 +18,24 @@ interface CLitemProps {
 }
 
 export default function CLitem({ item }: CLitemProps) {
+	const uploadDate = new Date(item.writtenAt);
+	const date = new Date();
 	return (
 		<li
 			key={item.postId}
 			className="py-6 px-6 border-solid border-b border-gray-200 text-basic flex justify-between"
 		>
 			<p className="w-600">
-				{item.title} ({item.commentCount})<i className="fa-solid fa-n"></i>
-				<i className="fa-solid fa-image"></i>
+				{item.title}{' '}
+				{Number(item.commentCount) !== 0 ? (
+					<span>({item.commentCount})</span>
+				) : undefined}
+				{date.getDate() === uploadDate.getDate() ? (
+					<i className="fa-solid fa-n mx-2"></i>
+				) : undefined}
+				{item.uploadImg !== '' ? (
+					<i className="fa-solid fa-image"></i>
+				) : undefined}
 			</p>
 			<div>
 				<span>{item.writerNickName}</span>
